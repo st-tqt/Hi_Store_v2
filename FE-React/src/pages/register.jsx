@@ -20,7 +20,7 @@ const RegisterPage = () => {
             navigate("/login");
         }
         else {
-            notification.success({
+            notification.error({
                 message: "CREATE USER",
                 description: "error",
             })
