@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+import Header from "./components/layout/header";
 import axios from "./util/axiosCustomize"
 import { useEffect } from "react"
 
@@ -14,9 +16,10 @@ function App() {
   }, [])
 
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <div>
+      <Header />
+      <Outlet></Outlet>
+    </div>
   )
 }
 
